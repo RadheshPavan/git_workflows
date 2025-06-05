@@ -8,5 +8,5 @@ jobs:
             - name: window_cmds
               run: |
                 hostname
-                ipconfig -a
+                ipconfig -all
           
