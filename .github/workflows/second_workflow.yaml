@@ -9,4 +9,4 @@ jobs:
               run: |
                 hostname
                 ipconfig -all
-          
+                ping google.com
