@@ -1,0 +1,12 @@
+name: Second Workflow
+on: [push]
+
+jobs:
+    run_cmds:
+        runs-on: windows-latest
+        steps:
+            - name: window_cmds
+              run: |
+                hostname
+                ipconfig -a
+          
