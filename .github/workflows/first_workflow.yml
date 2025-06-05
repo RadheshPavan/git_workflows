@@ -13,3 +13,15 @@ jobs:
           npm -v
           hostnamectl
           df -h
+  parallel_job:
+    runs-on: macos-latest
+    steps:
+       - name: View SW version
+         run: sw_ver
+  depend_job:
+    runs-on: windows-latest
+    needs: [run-shell-commands]
+    steps:
+       - name: Show Hostname
+         run: hostname 
+    
